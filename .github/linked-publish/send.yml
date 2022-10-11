@@ -5,14 +5,10 @@ on:
       - master
 jobs:
   ping:
-jobs:
-  ping:
     runs-on: ubuntu-latest
     steps:
-    - name: pinging
-      uses: fjogeleit/http-request-action@v1
-      with:
-        url: 'https://3702-68-234-232-24.ngrok.io/'
-        method: 'GET'
-
-    
+      - name: pinging
+        uses: fjogeleit/http-request-action@v1
+        with:
+          url: "https://3702-68-234-232-24.ngrok.io/"
+          method: "GET"
